@@ -1,22 +1,25 @@
-body {
- font-family: 'Ubuntu Condensed', sans-serif;
-
+html {
+  font-family: "Ubuntu Condensed", sans-serif;
 }
 
 .main-div {
   background-image: url("../images/starfield.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 i {
   background-image: url("../images/rocket.svg");
-  transition: all 1000ms linear;
+}
+
+.icon {
+  transition: all 3000ms linear;
 }
 
 h1, p {
   color: #fff;
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+  text-shadow: -1px 1px 10px rgba(255, 255, 255, .7);
 }
 
 .btn {
@@ -27,7 +30,11 @@ h1, p {
 }
 
 .btn-text {
-  color: #fff;
+  color: #90ccc3;
+}
+
+.btn-ghost {
+  transition: all 3000ms linear;
 }
 
 .button-border {
@@ -45,12 +52,12 @@ h1, p {
 .btn:hover .icon {
   padding-left: 0;
   padding-right: 0;
-  margin-bottom: .2em;
+  top: -6px;
   border-color: #b4fff4;
 }
 
-.btn:active .button-border,
-.btn:focus .button-border {
-  margin-top: -.5em;
-  margin-bottom: -.5em;
+.btn-ghost:active,
+.btn-ghost:focus {
+  top: 1px;
+  padding-top: 0;
 }
